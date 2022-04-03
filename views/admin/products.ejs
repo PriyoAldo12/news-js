@@ -7,7 +7,7 @@
 
             <main>
                 <div class="allheader text-center">
-                    <h1 id="headertext">Add/Edit New Product</h1>
+                    <h1 id="headertext">Add/Edit New News</h1>
                   </div>
                 <% if (prods.length > 0) { %>
                     <div class="grid">
@@ -22,7 +22,7 @@
                                     <img src="/<%= product.imageUrl %>" alt="<%= product.title %>">
                                 </div>
                                 <div class="card__content">
-                                    <h2 class="product__price">Rp
+                                    <h2 class="product__price">Like
                                         <%= product.price %>
                                     </h2>
                                     <p class="product__description">
@@ -39,7 +39,7 @@
                             <% } %>
                     </div>
                     <% } else { %>
-                        <h1>No Products Found!</h1>
+                        <h1>No News Found!</h1>
                         <% } %>
             </main>
             <%- include('../includes/end.ejs') %>

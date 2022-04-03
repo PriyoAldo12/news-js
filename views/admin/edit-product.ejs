@@ -8,7 +8,7 @@
 
    <main>
     <div class="allheader">
-        <h1>Add/Edit New Product</h1>
+        <h1>Add/Edit New News</h1>
       </div>
 
     <% if (errorMessage) { %>
@@ -32,7 +32,7 @@
                     id="image" >
             </div>
             <div class="form-group">
-                <label for="price">Price</label>
+                <label for="price">Like</label>
                 <input 
                     class="form-control <%= validationErrors.find(e => e.param === 'price') ? 'invalid' : '' %>"
                     type="number" 
@@ -55,7 +55,7 @@
             <% } %>
 
             <input type="hidden" name="_csrf" value="<%= csrfToken %>">
-            <button class="btnhome" type="submit"><% if (editing) { %>Update Product<% } else { %>Add Product<% } %></button>
+            <button class="btnhome" type="submit"><% if (editing) { %>Update news<% } else { %>Add news<% } %></button>
            
             <form action="/admin/admindash" method="get">
                      <button class="btnhome" type="submit">Cancel</button>
